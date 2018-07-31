@@ -1,0 +1,29 @@
+{
+  "name": "mmall_fe",
+  "version": "1.0.0",
+  "description": "mall\u001b[D\u001b[D\u001b[Dm\u001b[C\u001b[C\u001b[C\u001b[D\u001b[D\u001b[Da\u001b[ll前代码",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LR-Learning/mmall_fe.git"
+  },
+  "author": "lr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LR-Learning/mmall_fe/issues"
+  },
+  "homepage": "https://github.com/LR-Learning/mmall_fe#readme",
+  "devDependencies": {
+    "css-loader": "^1.0.0",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.12.0",
+    "webpack-cli": "^3.1.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.10"
+  }
+}
