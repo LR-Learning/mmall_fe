@@ -5,7 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "build": "webpack",
+    "dev"     : "WEBPACK_ENV=dev webpack-dev-server --port 8086 --inline --secure false",
+    "dev_win" : "set WEBPACK_ENV=dev && webpack-dev-server --port 8086 --inline --secure false",
+    "dist"    : "WEBPACK_ENV=online webpack -p",
+    "dist_win": "set WEBPACK_ENV=online && webpack -p"
   },
   "repository": {
     "type": "git",
@@ -19,6 +23,9 @@
   "homepage": "https://github.com/LR-Learning/mmall_fe#readme",
   "devDependencies": {
     "css-loader": "^1.0.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
     "style-loader": "^0.21.0",
     "webpack": "^4.12.0",
     "webpack-cli": "^3.1.0"
